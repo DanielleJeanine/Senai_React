@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Relogio from './Components/Relogio'
+import Separador from './Components/Separador';
+import Botao from './Components/Botao';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+       <h1>Cronômetro</h1>
+      <section>
+       
+                 <Relogio contador = '00'/>
+                 <Separador separador = ':'/>
+                 <Relogio contador = '00'/>
+                 <Separador separador = ':'/>
+                 <Relogio contador = '00'/>
+      </section>
+    
+        <div className='botoes'>
+        <Botao>Iniciar</Botao>
+        <Botao>Pausar</Botao>
+        <Botao>Reiniciar</Botao>
+        </div>
+
+    </main>
+  
   );
 }
 
