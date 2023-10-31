@@ -1,5 +1,5 @@
 export default function Contador(props){
     return(
-        <div>{props.contador}</div>
+        <div className={props.classe}>{props.contador}</div>
     );
 }
