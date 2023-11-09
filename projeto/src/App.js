@@ -31,6 +31,8 @@ function App() {
       console.log(alternativaSelecionada == pergunta.respostaCerta)
     }
   }
+
+  //teste
   
   function aoSelecionar(opcaoSelecionada){
     console.log(opcaoSelecionada);
